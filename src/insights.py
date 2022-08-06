@@ -200,7 +200,7 @@ def matches_salary_range(job, salary):
     elif type(salary) != int:
         raise ValueError("salary isn't a valid integer")
 
-    salary = job["min_salary"] <= salary <= job["min_salary"]
+    salary = job["min_salary"] <= salary <= job["max_salary"]
 
     return salary
 
